@@ -1,0 +1,114 @@
+.Register,
+.Login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.Register {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.Register form,
+.Register button {
+    width: 100%;
+    text-align: center;
+}
+
+.Register .form-control {
+    width: 100% !important;
+    border-radius: 20px !important;
+    height: 70px !important;
+    padding-left: 65px !important;
+    font-size: 20px !important;
+    color: #1c1c1c !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+    letter-spacing: 0.01rem !important;
+}
+
+.Register .flag-dropdown {
+    width: 55px;
+    left: 10px;
+    top: 50% !important;
+    transform: translateY(-50%);
+    height: 80%;
+    background: transparent !important;
+    border: none !important;
+}
+
+.Register button {
+    margin-top: 35px;
+    font-size: 2rem;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.Register h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+input[data-testid="input"] {
+    border: 1px solid black;
+}
+
+.main-request input {
+    border: 2px solid rgb(217 217 217);
+    width: 100% !important;
+    border-radius: 15px !important;
+    height: 70px !important;
+    font-size: 20px !important;
+    color: #1c1c1c !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+    letter-spacing: 0.01rem !important;
+    text-indent: 15px;
+    user-select: none;
+}
+
+.input-entered-name span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 17px;
+    user-select: none;
+    pointer-events: none;
+    transition: all 200ms ease-in-out;
+}
+
+.input-entered-name span.enter-handle {
+    top: 0;
+    left: 10px;
+    z-index: 10;
+    background: white;
+    color: rgb(25, 118, 210);
+    padding: 2px 4px;
+    font-size: 14px;
+}
+
+.input-entered-name span.outside {
+    top: 0;
+    left: 10px;
+    background: #fff;
+    padding: 2px 4px;
+    font-size: 14px;
+    color: black !important;
+}
+
+@media (max-width: 767px) {
+    .Register {
+        width: 100%;
+        padding: 0 35px;
+    }
+}
+
+@media (min-width: 768px) {
+    .Register {
+        width: 65%;
+    }
+}
